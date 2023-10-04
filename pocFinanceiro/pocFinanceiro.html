@@ -1,0 +1,16 @@
+<template>
+    <lightning-accordion class="example-accordion" active-section-name="sessao" allow-multiple-sections-open>
+        <lightning-accordion-section name="sessao" label={cliente}>
+            <lightning-badge label={tipo} class="slds-badge_inverse"></lightning-badge>
+            <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}
+                hide-checkbox-column>
+            </lightning-datatable>
+            <div class="espaco">
+                <lightning-button variant="success" label="Consultar ativos" title="Consultar ativos" onclick={teste}></lightning-button>
+            </div>            
+        </lightning-accordion-section>
+    </lightning-accordion>
+</template>
